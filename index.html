@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,11 +15,11 @@
     main {
       color: rgb(184, 10, 126);
       height: 100vh;
-      
+
     }
 
     .nome {
-      margin: 50px 0 0 10px;
+      margin: 50px 0 0 40px;
       font-size: large;
     }
 
@@ -29,12 +30,12 @@
       margin: 10px;
       padding: 3px;
       text-align: center;
-      margin-top: 130px;
+      margin-top: 100px;
       margin-bottom: 50px;
       margin-left: auto;
       margin-right: auto;
     }
-    
+
     section#Projetos {
       background-color: rgba(248, 225, 232, 0.719);
       border-radius: 10px;
@@ -55,7 +56,7 @@
       padding: 3px;
       text-align: center;
       margin: 0 auto 50px auto;
-      
+
     }
 
     article#linkedin {
@@ -92,10 +93,9 @@
     }
 
     .redes-container {
-      width: 20%;
-      margin: 50px auto 0 0;
+      width: 40%;
+      margin: 50px auto 0 40px;
       display: flex;
-      justify-content: space-evenly;
     }
 
     .redes {
@@ -105,34 +105,87 @@
       height: 40px;
       padding-top: 10px;
       padding-left: 10px;
+      margin-right: 20px;
     }
 
     .resumo {
-      margin-left: 10px;
+      margin-left: 40px;
     }
 
+    .projetos-container {
+      display: flex;
+      justify-content: space-evenly;
+      margin-left: 20px;
+    }
+
+    .android {
+      background-color: rgba(241, 171, 206);
+      border-radius: 10px;
+      width: 70px;
+      height: 50px;
+      padding-bottom: 10px;
+
+    }
+
+    .cordel {
+      background-color: rgba(241, 171, 206);
+      border-radius: 10px;
+      width: 70px;
+      height: 50px;
+      padding-bottom: 10px;
+    }
+
+    img {
+      height: 200px;
+      width: 200px;
+      margin-top: 50px;
+      border-radius: 50%;
+    }
+
+    section#Principal {
+      width: 100vw;
+      height: 40%;
+      display: flex;
+    }
+
+    .left-container {
+      width: 70%;
+      height: 100%;
+    }
+
+    .right-container {
+      width: 30%;
+      height: 100%;
+    }
   </style>
 </head>
+
 <body>
   <main>
     <section id="Principal">
-      <div class="nome">
-        <h1>Emanuelle <br> Mariguella</h1>
+      <div class="left-container">
+        <div class="nome">
+          <h1>Emanuelle <br> Mariguella</h1>
         </div>
         <div class="resumo">
           <p>Estudante desenvolvedora em <br> busca de estágio.</p>
         </div>
-      
+
         <div class="redes-container">
           <div class="redes">
-          <a href="https://www.linkedin.com/in/emanuelle-mariguella/" target="_blank">Lindekin</a>
+            <a href="https://www.linkedin.com/in/emanuelle-mariguella/" target="_blank">Lindekin</a>
           </div>
           <div class="redes">
             <a href="https://github.com/EmanuelleMariguella" target="_blank">GitHub</a>
-          
+
           </div>
         </div>
-        
+
+      </div>
+      <div class="right-container">
+        <img src="417137997_979071033576687_6458723237261950529_n.jpg" alt="">
+      </div>
+
     </section>
 
     <section id="Sobremim">
@@ -141,31 +194,44 @@
           Sobre mim
         </h2>
         <p>
-          Atualmente estudando HTML, CSS e JavaScript.
+          Sou estudante de Análise e Desenvolvimento de Sistemas e atualmente estou em busca de uma oportunidade de
+          estágio. Tenho grande interesse em atuar na área de tecnologia e estou me preparando para isso por meio de
+          cursos de extensão, projetos acadêmicos e pessoais.
         </p>
       </article>
     </section>
-    
+
     <section id="Projetos">
-      <h2>
-        Projetos
-      </h2>
+      <h2>Projetos</h2>
+      <div class="projetos-container">
+        <div class="android">
+          <p>
+            <a href="https://emanuellemariguella.github.io/projeto-android/" target="_blank"> Projeto <br> Android</a>
+          </p>
+        </div>
+        <div class="cordel">
+          <p>
+            <a href="https://emanuellemariguella.github.io/Projeto-Cordel/" target="_blank">Projeto <br> Cordel</a>
+          </p>
+        </div>
+      </div>
     </section>
 
-  <section id="Habilidades">
-    <h2>Habilidades</h2>
-     <div class="habilities-container">
-       <div class="hability">
-         <p>HTML</p>
-       </div>
-       <div class="hability">
-         <P>CSS</P>
-       </div>
-       <div class="hability">
-         <P>JavaScript</P>
-       </div>
-     </div>
-  </section>
+    <section id="Habilidades">
+      <h2>Habilidades</h2>
+      <div class="habilities-container">
+        <div class="hability">
+          <p>HTML</p>
+        </div>
+        <div class="hability">
+          <P>CSS</P>
+        </div>
+        <div class="hability">
+          <P>JavaScript</P>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
+
 </html>
